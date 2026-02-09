@@ -143,7 +143,7 @@ const server = http.createServer((req, res) => {
 });
 
 const PORT = 8080;
-const HOST = '127.0.0.1';
+const HOST = '0.0.0.0';
 server.listen(PORT, HOST, () => {
     console.log(`Mock Backend Server running at http://${HOST}:${PORT}/`);
 });

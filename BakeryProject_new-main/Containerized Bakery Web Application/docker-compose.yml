@@ -3,17 +3,10 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./backend-java
-      dockerfile: Dockerfile
-    environment:
-      # REPLACE 'your-rds-endpoint' with the actual endpoint from AWS RDS Console
-      # Example: bakery-db.cxyz123.us-east-1.rds.amazonaws.com
-      DB_URL: jdbc:mysql://bakery-db-instance.crm022wwqd6k.ca-central-1.rds.amazonaws.com:3306/bakery_db
-      DB_USER: admin
-      DB_PASS: admin123
+      context: .
+      dockerfile: Dockerfile.backend
     ports:
       - "8080:8080"
-    # We REMOVED 'depends_on: db' because RDS is external, not a container.
 
   frontend:
     build:

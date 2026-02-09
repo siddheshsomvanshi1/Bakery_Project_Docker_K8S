@@ -1,0 +1,12 @@
+{
+  "name": "bakery-backend",
+  "version": "1.0.0",
+  "description": "Mock backend for Bakery Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {},
+  "author": "",
+  "license": "ISC"
+}
